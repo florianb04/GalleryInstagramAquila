@@ -1,0 +1,39 @@
+<form name="form" class="form-horizontal" novalidate ng-submit="save(false)" role="form">
+    <ns-box data-title="base-plugin-aquila.config.title"  title-icon="fa fa-home" close-href="#/modules">
+        <ns-buttons is-edit-mode="isEditMode" save-and-quit="save(true)" disable-save="disableSave" return-path="/modules" form="form">
+            <div class="form-group">
+                <div class="col-sm-11">
+                    <label for="host" class="col-sm-2 control-label" >Test Nom</label>
+                    <div class="col-sm-6">
+                        <input placeholder="localhost" type="text" class="form-control" id="host" name="host" ng-model="plugin.nom" required>
+                        <div class="ns-error-message" ng-show="form.host.$touched || form.nsSubmitted">
+                            <div ng-show="form.host.$error.required" >Champ requis</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-11">
+                    <label for="user" class="col-sm-2 control-label">Test Prenom</label>
+                    <div class="col-sm-6">
+                        <input placeholder="user1234" type="text" class="form-control" id="user" name="user" ng-model="plugin.prenom" required>
+                        <div class="ns-error-message" ng-show="form.user.$touched || form.nsSubmitted">
+                            <div ng-show="form.user.$error.required">Champ requis</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-11">
+                    <label for="password" class="col-sm-2 control-label">Test Date de naissance</label>
+                    <div class="col-sm-6">
+                        <input type="password" class="form-control" id="password" name="password" ng-model="plugin.date" required>
+                        <div class="ns-error-message" ng-show="form.password.$touched || form.nsSubmitted">
+                            <div ng-show="form.password.$error.required">Champ requis</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ns-buttons>
+    </ns-box>
+</form>
