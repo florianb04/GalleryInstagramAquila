@@ -1,15 +1,17 @@
 {
     "info": {
-        "name": "base-plugin-aquila",
-        "description": "Base d'un plugin aquila",
-        "version": "1.0.0a",
+        "name": "gallery-instagram-aquila",
+        "description": "Plugin for instagram's gallery",
+        "version": "1.0.0",
+        "restart": true,
         "loadApp": true,
-        "url": "base-plugin-config",
+        "url": "gallery-instagram-aquila-config",
         "files": [],
         "packageDependencies": {
-            "theme": {},
-            "api": {}
-        },
-        "moduleDependencies": []
-    }
+            "api": {
+                "instagram-private-api": "^1.45.3",
+                "re2": "^1.17.4"
+            }
+        }
+    }  
 }

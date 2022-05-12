@@ -3,9 +3,9 @@ const {info} = require('./info.json');
 // const {Shortcodes} = require('../../orm/models');
 
 // eslint-disable-next-line no-unused-vars, max-params, require-await
-module.exports = async function (resolve, reject, server, app, passport) {
+module.exports = async function (resolve, reject, server, app) {
     try {
-        require('./routes/base-plugin-aquila')(app);
+        require('./routes/gallery-instagram-aquila')(app);
 
         /* ShortCode Extension
         const shortCodes = {
