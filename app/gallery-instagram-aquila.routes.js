@@ -3,7 +3,7 @@ const InstaRoutes = angular.module('aq.gallery-instagram-aquila.routes', ['ngRou
 InstaRoutes.config(['$routeProvider',
     function ($routeProvider) {
         $routeProvider
-            .when('/gallery-instagram-aquila', {
+            .when('/gallery-instagram-aquila-config', {
                 templateUrl : 'app/gallery-instagram-aquila/views/gallery-instagram-aquila-config.html',
                 controller  : 'InstaController',
                 resolve     : {

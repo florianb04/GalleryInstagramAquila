@@ -3,32 +3,32 @@
         <ns-buttons is-edit-mode="isEditMode" save-and-quit="save(true)" disable-save="disableSave" return-path="/modules" form="form">
             <div class="form-group">
                 <div class="col-sm-11">
-                    <label for="host" class="col-sm-2 control-label" >User's name</label>
+                    <label for="userName" class="col-sm-2 control-label" >User's name</label>
                     <div class="col-sm-6">
-                        <input placeholder="localhost" type="text" class="form-control" id="host" name="host" ng-model="plugin.userName" required>
-                        <div class="ns-error-message" ng-show="form.host.$touched || form.nsSubmitted">
-                            <div ng-show="form.host.$error.required">Field required</div>
+                        <input placeholder="userName" type="text" class="form-control" id="userName" name="userName" ng-model="plugin.userName">
+                        <div class="ns-error-message" ng-show="form.userName.$touched || form.nsSubmitted">
+                            <div ng-show="form.userName.$error.required">Field required</div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-11">
-                    <label for="user" class="col-sm-2 control-label">User's Secret</label>
+                    <label for="password" class="col-sm-2 control-label">Password</label>
                     <div class="col-sm-6">
-                        <input placeholder="user1234" type="text" class="form-control" id="user" name="user" ng-model="plugin.userSecret" required>
-                        <div class="ns-error-message" ng-show="form.user.$touched || form.nsSubmitted">
-                            <div ng-show="form.user.$error.required">Field required</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="col-sm-11">
-                    <label for="password" class="col-sm-2 control-label">Verification code (if two factor connection)</label>
-                    <div class="col-sm-6">
-                        <input type="password" class="form-control" id="password" name="password" ng-model="plugin.verifCode" required>
+                        <input placeholder="password1234" type="text" class="form-control" id="password" name="password" ng-model="plugin.userSecret" required>
                         <div class="ns-error-message" ng-show="form.password.$touched || form.nsSubmitted">
+                            <div ng-show="form.password.$error.required">Field required</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-11">
+                    <label for="verifCode" class="col-sm-2 control-label">Verification code</label>
+                    <div class="col-sm-6">
+                        <input placeholder="(required onyl if two factor connection)" type="text" class="form-control" id="verifCode" name="verifCode" ng-model="plugin.verifCode" required>
+                        <div class="ns-error-message" ng-show="form.verifCode.$touched || form.nsSubmitted">
                             <div ng-show="form.user.$error.required">Field required</div>
                         </div>
                     </div>

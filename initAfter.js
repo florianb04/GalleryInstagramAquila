@@ -6,6 +6,8 @@ const {info} = require('./info.json');
 module.exports = async function (resolve, reject, server, app) {
     try {
         require('./routes/gallery-instagram-aquila')(app);
+        // const serviceModules = require('../../services/modules');
+        // const config         = await serviceModules.getConfig('gallery-instagram-aquila');
 
         /* ShortCode Extension
         const shortCodes = {
