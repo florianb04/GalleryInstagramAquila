@@ -7,6 +7,7 @@
         "loadApp": true,
         "url": "gallery-instagram-aquila-config",
         "files": [],
+        "component_template_front": "aq-instacontainer",
         "packageDependencies": {
             "api": {
                 "instagram-private-api": "^1.45.3",

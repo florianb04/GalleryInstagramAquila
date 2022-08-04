@@ -20,6 +20,10 @@ To use it, do
 npm run -s lint:check
 ```
 
+## Add REACT component into themeName/modules/list_modules.js :
+{jsx: require('./gallery-instagram-aquila/ModuleInstaContainer.js'), code: 'aq-moduleinstacontainer', type: 'undefined'}
+
+
 > Lengend :
 >
 > - `-s` is for silent npm

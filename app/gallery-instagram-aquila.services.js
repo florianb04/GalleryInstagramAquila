@@ -3,7 +3,8 @@ const BaseServices = angular.module('aq.gallery-instagram-aquila.services', ['ng
 BaseServices.factory('InstaConfig', ['$resource',
     function ($resource) {
         return $resource('/v2/GalleryInstagramAquila/:action/:id', {}, {
-            query : {method: 'POST', params: {}},
+            // query : {method: 'POST', params: {}},
+            query : {method: 'POST', params: {} , isArray: true},
             update : {method: 'POST', params: {action: 'config', id: ''}}
             // update : {method: 'POST', params: {action: 'setConfig', id: ''}}
         });
