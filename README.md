@@ -23,6 +23,9 @@ npm run -s lint:check
 ## Add REACT component into themeName/modules/list_modules.js :
 {jsx: require('./gallery-instagram-aquila/ModuleInstaContainer.js'), code: 'aq-moduleinstacontainer', type: 'undefined'}
 
+## Link to the dependency
+https://github.com/dilame/instagram-private-api
+
 
 > Lengend :
 >
