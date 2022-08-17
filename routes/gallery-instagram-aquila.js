@@ -22,8 +22,8 @@ const igStart = async (req, res, next) => {
     console.log('igStart begin ...');
 
     const ig = new IgApiClient();
-    const userName    = 'api.testor';
-    const userSecret  = '2@#xEIi&Cg%5';
+    const userName    = 'userName';
+    const userSecret  = 'userSecret';
     // const userName    = req.userName;
     // const userSecret  = req.userSecret;
 
